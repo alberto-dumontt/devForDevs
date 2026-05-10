@@ -3,12 +3,10 @@ import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
-import { COUNTRIES } from '../lib/countries';
+import { getCountries } from '../lib/countries';
 
 const countryFlag = (code) =>
   code ? code.toUpperCase().replace(/./g, c => String.fromCodePoint(c.charCodeAt(0) + 127397)) : '';
-
-const countryName = (code) => COUNTRIES.find(c => c.code === code)?.name ?? code;
 
 const initials = (str) =>
   str ? str.split(' ').map(w => w[0]).slice(0, 2).join('').toUpperCase() : '?';
@@ -83,7 +81,7 @@ export default function PublicProfile() {
             {(profile.country || profile.company) && (
               <div className="profile-meta-row profile-location">
                 {profile.country && (
-                  <span>{countryFlag(profile.country)} {countryName(profile.country)}</span>
+                  <span>{countryFlag(profile.country)} {t(`countries.${profile.country}`)}</span>
                 )}
                 {profile.country && profile.company && <span className="profile-sep">·</span>}
                 {profile.company && <span>{profile.company}</span>}

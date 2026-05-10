@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../contexts/AuthContext';
-import { COUNTRIES } from '../lib/countries';
+import { getCountries } from '../lib/countries';
 
 function BrandIcon() {
   return (
@@ -131,7 +131,7 @@ export default function ProfileSetup() {
                 onChange={e => setCountry(e.target.value)}
               >
                 <option value="">{t('register.countrySelect')}</option>
-                {COUNTRIES.map(c => (
+                {getCountries(t).map(c => (
                   <option key={c.code} value={c.code}>{c.name}</option>
                 ))}
               </select>
