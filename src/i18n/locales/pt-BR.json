@@ -1,0 +1,364 @@
+{
+  "nav": {
+    "home": "Início",
+    "toolsLabel": "Ferramentas",
+    "devspecai": "DevSpec.AI",
+    "recommendations": "Recomendações",
+    "studyLabel": "Estudo",
+    "roadmapsLabel": "Roadmaps",
+    "roadmaps": "Roadmaps",
+    "courses": "Cursos",
+    "comingSoon": "em desenvolvimento"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Criado por devs,\npara devs.",
+      "description": "Não importa onde você está na carreira — começando do zero, se reposicionando ou buscando evoluir. O dev for devs é um espaço aberto e gratuito para crescer junto com a comunidade, com orientação real de quem já passou pelo mesmo caminho.",
+      "cta": "Fazer parte"
+    },
+    "offering": {
+      "title": "Como podemos te apoiar",
+      "start": {
+        "title": "Por onde começar",
+        "desc": "Guias práticos para quem não sabe dar o primeiro passo — do primeiro código ao primeiro emprego, sem enrolação."
+      },
+      "career": {
+        "title": "Carreira & Mercado",
+        "desc": "Conversas reais sobre o mercado de tech, áreas de atuação, transição de carreira e as dúvidas que todo dev tem mas poucos falam."
+      },
+      "networking": {
+        "title": "Networking & Posicionamento",
+        "desc": "Dicas de LinkedIn, como construir presença profissional, se conectar com as pessoas certas e se posicionar melhor na área."
+      },
+      "resources": {
+        "title": "Ferramentas & Recursos",
+        "desc": "Utilitários e materiais que facilitam o aprendizado e o trabalho do dia a dia — gratuitos, sem cadastro, sem plano."
+      }
+    },
+    "creator": {
+      "label": "Quem está por trás",
+      "role": "Developer & Builder",
+      "bio": "Oi, sou Alberto Dumontt. Criei o dev for devs porque sentia falta de um espaço real de apoio para devs — sem paywall, sem promessa vazia — onde fosse possível crescer junto, tirar dúvidas de verdade e encontrar orientação de quem já viveu os mesmos desafios. Isso aqui não é um produto: é uma comunidade em construção. Se você é dev e quer contribuir, é só chegar.",
+      "github": "github.com/alberto-dumontt"
+    }
+  },
+  "spec": {
+    "title": "DevSpec.AI",
+    "description": "Preencha seu stack de tecnologias, objetivo profissional e nível de experiência — o DevSpec.AI gera uma especificação de projeto personalizada, pronta para usar como guia de estudo, portfólio ou preparação para entrevistas técnicas.",
+    "loginRequired": "Faça login para gerar especificações.",
+    "loginLink": "Entrar"
+  },
+  "form": {
+    "technologies": "Tecnologias",
+    "technologiesPlaceholder": "Ex: API com Java e Redis",
+    "goal": "Objetivo profissional",
+    "goalPlaceholder": "Ex: Vaga para dev Java Júnior em fintech",
+    "level": "Nível profissional",
+    "levelSelect": "Selecione o nível",
+    "junior": "Júnior",
+    "mid": "Pleno",
+    "senior": "Sênior",
+    "generate": "Gerar Especificações"
+  },
+  "result": {
+    "title": "Especificação gerada",
+    "copy": "Copiar",
+    "copied": "Copiado!"
+  },
+  "loading": "Gerando especificação...",
+  "error": "Desculpe, no momento o DevSpecAI está indisponível.\nTente novamente em alguns minutos.",
+  "footer": "Hospedado na camada gratuita da Render — o primeiro acesso pode levar alguns minutos (cold start).",
+  "community": {
+    "navLabel": "Comunidade",
+    "navItem": "Comunidade",
+    "title": "Comunidade",
+    "subtitle": "Troque experiências, tire dúvidas e cresça junto com outros desenvolvedores.",
+    "composerPlaceholder": "O que você quer compartilhar com a comunidade?",
+    "loginToPost": "Faça login para publicar.",
+    "loginToComment": "Faça login para comentar",
+    "tagsLabel": "Tópico",
+    "publish": "Publicar",
+    "addComment": "Adicione um comentário...",
+    "noComments": "Seja o primeiro a comentar.",
+    "loading": "Carregando posts...",
+    "empty": "Nenhum post ainda. Seja o primeiro a compartilhar algo!",
+    "loadMore": "Carregar mais",
+    "justNow": "agora",
+    "timeMin": "há {{n}}min",
+    "timeHour": "há {{n}}h",
+    "timeDay": "há {{n}}d",
+    "tags": {
+      "techQuestion": "Dúvida Técnica",
+      "career": "Carreira",
+      "market": "Mercado",
+      "sharing": "Compartilhando",
+      "networking": "Networking",
+      "linkedin": "LinkedIn",
+      "discussion": "Discussão"
+    }
+  },
+  "login": {
+    "loginBtn": "Login",
+    "title": "Bem-vindo de volta",
+    "subtitle": "Entre na sua conta dev for devs.",
+    "continueWith": "Continuar com",
+    "or": "ou",
+    "email": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "password": "Senha",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Entrar",
+    "loggingIn": "Entrando...",
+    "logout": "Sair",
+    "noAccount": "Ainda não tem conta?",
+    "register": "Cadastre-se",
+    "back": "← Voltar ao início"
+  },
+  "register": {
+    "title": "Crie sua conta",
+    "subtitle": "Junte-se à comunidade dev for devs.",
+    "step1Label": "Conta",
+    "step2Label": "Perfil",
+    "next": "Continuar",
+    "backToStep1": "Voltar",
+    "confirmPassword": "Confirmar senha",
+    "passwordPlaceholder": "Mínimo 6 caracteres",
+    "confirmPasswordPlaceholder": "Repita a senha",
+    "profileTitle": "Seu perfil",
+    "profileSubtitle": "Conta criada! Agora nos conta um pouco sobre você.",
+    "name": "Nome completo",
+    "namePlaceholder": "Seu nome",
+    "jobTitle": "Cargo / Área",
+    "jobTitlePlaceholder": "Ex: Dev Backend, Product Manager...",
+    "seniority": "Senioridade",
+    "senioritySelect": "Selecione",
+    "seniorityBeginner": "Iniciante",
+    "seniorityJunior": "Júnior",
+    "seniorityMid": "Pleno",
+    "senioritySenior": "Sênior",
+    "country": "País",
+    "countrySelect": "Selecione seu país",
+    "company": "Empresa",
+    "companyPlaceholder": "Onde você trabalha (opcional)",
+    "bio": "Bio curta",
+    "bioPlaceholder": "Conte um pouco sobre você (opcional)",
+    "githubPlaceholder": "seu-usuario",
+    "linkedinPlaceholder": "seu-usuario",
+    "submit": "Criar conta",
+    "registering": "Criando conta...",
+    "hasAccount": "Já tem uma conta?",
+    "passwordMismatch": "As senhas não coincidem.",
+    "passwordTooShort": "A senha deve ter pelo menos 6 caracteres.",
+    "checkEmailTitle": "Confirme seu e-mail",
+    "checkEmailDesc": "Enviamos um link de confirmação para {{email}}. Verifique sua caixa de entrada.",
+    "goToLogin": "Ir para o login",
+    "required": "*"
+  },
+  "profileSetup": {
+    "title": "Complete seu perfil",
+    "subtitle": "Essas informações ajudam a comunidade a te conhecer melhor.",
+    "save": "Salvar perfil",
+    "skip": "Pular por agora"
+  },
+  "profile": {
+    "title": "Meu Perfil",
+    "edit": "Editar",
+    "save": "Salvar",
+    "saving": "Salvando...",
+    "cancel": "Cancelar",
+    "saved": "Perfil atualizado.",
+    "links": "Links",
+    "empty": "Nenhuma informação adicionada ainda.",
+    "emptyPublic": "Este usuário ainda não preencheu o perfil.",
+    "notFound": "Perfil não encontrado.",
+    "viewProfile": "Ver perfil"
+  },
+  "jobs": {
+    "navItem": "DevRadar",
+    "title": "DevRadar",
+    "betaBadge": "beta",
+    "subtitle": "Vagas para desenvolvedores, coletadas automaticamente. Esta funcionalidade está em versão beta — as vagas são encontradas por robôs e podem conter imprecisões.",
+    "botLabel": "O que é o DevRadar?",
+    "botDesc": "O DevRadar é um robozinho que vasculha a internet em busca de vagas para devs e publica aqui automaticamente. A rotina roda 1 vez por dia, sempre trazendo as oportunidades mais recentes. Sem curadoria manual — só vagas encontradas e entregues de forma automática. Está em constante desenvolvimento: nesta primeira versão o foco é o mercado brasileiro, e nas próximas atualizações vamos expandir para outros mercados.",
+    "searchPlaceholder": "Buscar por título...",
+    "loading": "Carregando vagas...",
+    "empty": "Nenhuma vaga encontrada.",
+    "notInformed": "Não informado",
+    "publishedToday": "publicado hoje",
+    "publishedYesterday": "publicado ontem",
+    "publishedDaysAgo": "publicado há {{count}} dias",
+    "noDescription": "Descrição não informada.",
+    "showMore": "Ver mais",
+    "showLess": "Ver menos",
+    "workplaceType": {
+      "REMOTE": "Remoto",
+      "HYBRID": "Híbrido",
+      "ON_SITE": "Presencial"
+    },
+    "employmentType": {
+      "FULL_TIME": "Tempo integral",
+      "PART_TIME": "Meio período",
+      "CONTRACT": "Contrato / PJ",
+      "TEMPORARY": "Temporário",
+      "INTERNSHIP": "Estágio",
+      "FREELANCE": "Freelance"
+    },
+    "seniorityLevel": {
+      "ENTRY_LEVEL": "Júnior",
+      "MID_SENIOR": "Pleno / Sênior",
+      "ASSOCIATE": "Associado",
+      "DIRECTOR": "Diretor",
+      "EXECUTIVE": "Executivo"
+    }
+  },
+  "courses": {
+    "title": "Cursos",
+    "subtitle": "Cursos recomendados pela comunidade. Indicações honestas de devs que realmente fizeram.",
+    "suggest": "Sugerir curso",
+    "loading": "Carregando cursos...",
+    "empty": "Nenhum curso ainda. Seja o primeiro a sugerir!",
+    "loginToComment": "Faça login para comentar",
+    "form": {
+      "name": "Nome do curso",
+      "namePlaceholder": "Ex: CS50x, The Odin Project...",
+      "platform": "Plataforma",
+      "platformPlaceholder": "Ex: Udemy, edX, YouTube...",
+      "description": "Por que você recomenda?",
+      "descriptionPlaceholder": "Conte como te ajudou e por que vale a pena...",
+      "url": "Link",
+      "tags": "Categorias",
+      "submit": "Publicar recomendação",
+      "submitting": "Publicando..."
+    },
+    "tags": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps",
+      "ai": "IA",
+      "career": "Carreira",
+      "free": "Gratuito",
+      "paid": "Pago"
+    }
+  },
+  "recommendations": {
+    "title": "Recomendações",
+    "subtitle": "Ferramentas recomendadas pela comunidade. Cada sugestão vem de um dev que usa no dia a dia.",
+    "suggest": "Sugerir ferramenta",
+    "loading": "Carregando recomendações...",
+    "empty": "Nenhuma recomendação encontrada. Seja o primeiro a sugerir!",
+    "loginToComment": "Faça login para comentar",
+    "form": {
+      "name": "Nome da ferramenta",
+      "namePlaceholder": "Ex: Notion, Postman, Linear...",
+      "description": "Por que você recomenda?",
+      "descriptionPlaceholder": "Conte como usa no dia a dia e por que vale a pena...",
+      "url": "Link",
+      "tags": "Categorias",
+      "submit": "Publicar recomendação",
+      "submitting": "Publicando..."
+    },
+    "tags": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "career": "Carreira",
+      "ai": "IA",
+      "productivity": "Produtividade",
+      "study": "Estudo",
+      "free": "Free",
+      "paid": "Paid"
+    }
+  },
+  "common": {
+    "edit": "Editar",
+    "delete": "Excluir",
+    "confirmDelete": "Tem certeza que deseja excluir?",
+    "sortRecent": "Mais recentes",
+    "sortOldest": "Mais antigos",
+    "sortLiked": "Mais curtidos",
+    "myPosts": "Minhas publicações"
+  },
+  "roadmaps": {
+    "index": {
+      "title": "Roadmaps",
+      "subtitle": "Trilhas de estudo curadas por profissionais da comunidade. Cada roadmap é uma recomendação real, baseada em experiência prática.",
+      "comingSoon": "em breve"
+    },
+    "backendBeginner": {
+      "navLabel": "Backend Iniciante",
+      "category": "Roadmap · Backend",
+      "level": "Iniciante",
+      "cardDesc": "Fundamentos do desenvolvimento backend: lógica, linguagem, banco de dados, APIs REST e deploy.",
+      "title": "Backend para Iniciantes",
+      "subtitle": "Um guia prático e progressivo para quem está começando na área de desenvolvimento backend. Siga os passos na ordem, sem pressa — consistência vale mais do que velocidade.",
+      "recommendedBy": "Recomendado por",
+      "recommenderRole": "Developer Backend",
+      "recommenterExp": "Desenvolvedor há mais de 3 anos",
+      "recommenterBio": "Com foco em backend, APIs REST e arquitetura de sistemas, Alberto acredita que o aprendizado se consolida na prática — construindo projetos reais, errando, ajustando e evoluindo. Este roadmap reflete o caminho que ele trilhou e recomenda para quem está começando.",
+      "projectIdeas": {
+        "title": "Ideias de Projetos",
+        "subtitle": "Projetos sugeridos por Alberto Dumontt — fora do óbvio, pensados para consolidar o que você aprendeu com desafios reais.",
+        "conceptsLabel": "Conceitos praticados",
+        "stackLabel": "Stack sugerida",
+        "items": [
+          {
+            "title": "Sistema Bancário com POO",
+            "desc": "Implemente um sistema bancário do zero. Crie classes como Conta, ContaCorrente, ContaPoupança e Cliente, aplicando herança, encapsulamento e polimorfismo. Adicione regras reais: limite de cheque especial, rendimento de poupança e histórico de transações. Você vai entender POO de verdade quando precisar modelar algo com regras de negócio reais — não um exemplo didático, mas um sistema que funciona.",
+            "concepts": ["Herança", "Encapsulamento", "Polimorfismo", "Interfaces", "Regras de Negócio"],
+            "stack": ["Java", "Python", "Estrutura de Dados", "POO"]
+          },
+          {
+            "title": "API REST com Arquitetura em Camadas",
+            "desc": "Construa uma API de gerenciamento (finanças pessoais, estoque ou tarefas) aplicando separação de responsabilidades: Controller recebe a requisição, Service executa a lógica de negócio, Repository conversa com o banco. Adicione autenticação JWT e validação de entrada. É o projeto que simula um ambiente de trabalho real — e que você vai poder mostrar em entrevistas.",
+            "concepts": ["Arquitetura em Camadas", "Controller", "Service", "Repository", "JWT", "Validação"],
+            "stack": ["Spring Boot", "Express", "Flask", "PostgreSQL", "REST"]
+          }
+        ]
+      },
+      "steps": [
+        {
+          "title": "Lógica de Programação",
+          "desc": "Antes de qualquer linguagem, aprenda a pensar como programador: variáveis, condicionais, loops, funções e estruturas de dados básicas. É a fundação de tudo — sem ela, qualquer linguagem vai parecer magia.",
+          "tags": ["Algoritmos", "Pseudocódigo", "Estruturas de Dados", "Fluxograma"]
+        },
+        {
+          "title": "Escolha sua Primeira Linguagem",
+          "desc": "Escolha uma linguagem e vá fundo. Junto com a sintaxe, aprenda os dois pilares que definem como você vai pensar e escrever código profissional: Estrutura de Dados (listas, pilhas, filas, mapas) e Programação Orientada a Objetos — classe, herança, encapsulamento e polimorfismo. Não avance sem entender esses conceitos.",
+          "tags": ["Java", "Python", "JavaScript", "Estrutura de Dados", "POO", "Tipagem"]
+        },
+        {
+          "title": "Git & Controle de Versão",
+          "desc": "Aprenda Git desde o primeiro projeto. Saiba fazer commit, push, pull, criar branches e resolver conflitos. Use o GitHub para guardar e mostrar seu trabalho — é seu portfólio real.",
+          "tags": ["Git", "GitHub", "Branch", "CLI", "Histórico de código"]
+        },
+        {
+          "title": "Banco de Dados Relacional",
+          "desc": "Aprenda SQL de verdade: criar tabelas, inserir, atualizar, deletar e consultar dados com filtros, joins e agrupamentos. Entenda relacionamentos (1:1, 1:N, N:M) e como modelar um banco do zero.",
+          "tags": ["SQL", "PostgreSQL", "MySQL", "Modelagem", "Joins"]
+        },
+        {
+          "title": "Construa sua Primeira API REST",
+          "desc": "Entenda HTTP na prática — verbos (GET, POST, PUT, DELETE), status codes e JSON. Crie uma API com endpoints reais usando o framework da sua linguagem. Teste com Postman ou Insomnia.",
+          "tags": ["HTTP", "REST", "JSON", "Spring Boot", "Express", "Flask", "Postman"]
+        },
+        {
+          "title": "Autenticação & Segurança Básica",
+          "desc": "Aprenda a proteger sua API: autentique usuários com JWT, faça hash de senhas com bcrypt e nunca salve dado sensível em texto puro. Segurança não é opcional — começa no primeiro endpoint.",
+          "tags": ["JWT", "bcrypt", "Autenticação", "Autorização", "Boas práticas"]
+        },
+        {
+          "title": "Deploy — Coloque no Ar",
+          "desc": "Suba sua API para a internet. Aprenda sobre variáveis de ambiente, como usar plataformas gratuitas e o básico de um fluxo de deploy. Projeto que ninguém acessa não existe.",
+          "tags": ["Render", "Railway", "Variáveis de ambiente", "CI básico", "Logs"]
+        }
+      ]
+    },
+    "locked": {
+      "backendMid": { "label": "Backend Pleno", "area": "Backend" },
+      "cyberSecurity": { "label": "Cyber Security", "area": "Segurança" },
+      "ai": { "label": "Inteligência Artificial", "area": "IA" },
+      "devops": { "label": "DevOps", "area": "DevOps" }
+    }
+  }
+}
