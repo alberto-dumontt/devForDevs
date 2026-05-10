@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
+import { usePageReady } from '../hooks/usePageReady';
 
 const PAGE_SIZE = 10;
 const DESC_LIMIT = 220;
@@ -59,6 +60,7 @@ export default function Jobs() {
   const [expanded, setExpanded] = useState(new Set());
   const [lastRunAt, setLastRunAt] = useState(null);
   const debounceRef = useRef(null);
+  usePageReady(loading);
 
   useEffect(() => {
     fetch(

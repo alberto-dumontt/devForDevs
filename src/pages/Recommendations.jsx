@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { usePageReady } from '../hooks/usePageReady';
 import { useTranslation } from 'react-i18next';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
@@ -78,6 +79,7 @@ export default function Recommendations() {
   const [loading, setLoading] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
   const [page, setPage] = useState(0);
+  usePageReady(loading);
   const [hasMore, setHasMore] = useState(false);
 
   const [activeTag, setActiveTag] = useState('all');
