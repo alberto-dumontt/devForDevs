@@ -191,6 +191,8 @@
     "noDescription": "Descrição não informada.",
     "showMore": "Ver mais",
     "showLess": "Ver menos",
+    "loginToReadMore": "Faça login para ler a descrição completa",
+    "loginToApply": "Faça login para acessar esta vaga ↗",
     "workplaceType": {
       "REMOTE": "Remoto",
       "HYBRID": "Híbrido",

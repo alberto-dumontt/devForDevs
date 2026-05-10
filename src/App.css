@@ -3337,3 +3337,29 @@ select option {
   letter-spacing: 0.04em;
   flex-shrink: 0;
 }
+
+.job-card-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.job-login-gate {
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-3);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.job-login-gate:hover {
+  color: var(--text-2);
+}
+
+.job-login-gate--link {
+  margin-top: 0;
+  font-size: 0.68rem;
+}

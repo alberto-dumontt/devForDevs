@@ -191,6 +191,8 @@
     "noDescription": "No description provided.",
     "showMore": "Show more",
     "showLess": "Show less",
+    "loginToReadMore": "Sign in to read the full description",
+    "loginToApply": "Sign in to access this job ↗",
     "workplaceType": {
       "REMOTE": "Remote",
       "HYBRID": "Hybrid",

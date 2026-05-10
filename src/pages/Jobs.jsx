@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
+import { useAuth } from '../contexts/AuthContext';
 import { usePageReady } from '../hooks/usePageReady';
 
 const PAGE_SIZE = 10;
@@ -50,6 +52,7 @@ async function fetchPage({ search, sort, pg }) {
 
 export default function Jobs() {
   const { t, i18n } = useTranslation();
+  const { user } = useAuth();
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
@@ -167,7 +170,7 @@ export default function Jobs() {
                   <div className="job-card-top">
                     <div className="job-title-block">
                       <h3 className="job-title">
-                        {job.url
+                        {job.url && user
                           ? <a href={job.url} target="_blank" rel="noreferrer" className="rec-tool-link">{job.title} ↗</a>
                           : job.title
                         }
@@ -189,9 +192,16 @@ export default function Jobs() {
                       <div>
                         <p className="job-description">{text}</p>
                         {isLong && (
-                          <button className="job-expand-btn" onClick={() => toggleExpand(job.id)}>
-                            {isExpanded ? t('jobs.showLess') : t('jobs.showMore')}
-                          </button>
+                          user
+                            ? (
+                              <button className="job-expand-btn" onClick={() => toggleExpand(job.id)}>
+                                {isExpanded ? t('jobs.showLess') : t('jobs.showMore')}
+                              </button>
+                            ) : (
+                              <Link to="/login" className="job-login-gate">
+                                {t('jobs.loginToReadMore')}
+                              </Link>
+                            )
                         )}
                       </div>
                     );
@@ -204,9 +214,16 @@ export default function Jobs() {
                       <span className="rec-tool-tag">{empType}</span>
                       <span className="rec-tool-tag">{senLevel}</span>
                     </div>
-                    <div className="job-bot-badge">
-                      <BotIcon />
-                      <span>DevRadar</span>
+                    <div className="job-card-bottom-right">
+                      {!user && job.url && (
+                        <Link to="/login" className="job-login-gate job-login-gate--link">
+                          {t('jobs.loginToApply')}
+                        </Link>
+                      )}
+                      <div className="job-bot-badge">
+                        <BotIcon />
+                        <span>DevRadar</span>
+                      </div>
                     </div>
                   </div>
                 </div>
