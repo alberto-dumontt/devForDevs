@@ -66,7 +66,7 @@
     "copied": "Copied!"
   },
   "loading": "Generating specification...",
-  "error": "Sorry, DevSpecAI is currently unavailable.\nPlease try again in a few minutes.",
+  "error": "Oops! Looks like the server was taking a nap 😴\nWe're on Render's free tier, so it goes to sleep when idle. Give it about 5 minutes to wake up and try again — it'll be worth it!",
   "footer": "Hosted on Render's free tier — the first request may take a few minutes (cold start).",
   "community": {
     "navLabel": "Community",

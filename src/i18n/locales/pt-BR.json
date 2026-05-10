@@ -66,7 +66,7 @@
     "copied": "Copiado!"
   },
   "loading": "Gerando especificação...",
-  "error": "Desculpe, no momento o DevSpecAI está indisponível.\nTente novamente em alguns minutos.",
+  "error": "Ops! Parece que o servidor estava tirando um cochilo 😴\nA gente tá na camada gratuita da Render, então ele dorme quando fica sem uso. Aguarda uns 5 minutinhos e tenta de novo — vai funcionar!",
   "footer": "Hospedado na camada gratuita da Render — o primeiro acesso pode levar alguns minutos (cold start).",
   "community": {
     "navLabel": "Comunidade",
