@@ -180,6 +180,7 @@
     "subtitle": "Vagas para desenvolvedores, coletadas automaticamente. Esta funcionalidade está em versão beta — as vagas são encontradas por robôs e podem conter imprecisões.",
     "botLabel": "O que é o DevRadar?",
     "botDesc": "O DevRadar é um robozinho que vasculha a internet em busca de vagas para devs e publica aqui automaticamente. A rotina roda 1 vez por dia, sempre trazendo as oportunidades mais recentes. Sem curadoria manual — só vagas encontradas e entregues de forma automática. Está em constante desenvolvimento: nesta primeira versão o foco é o mercado brasileiro, e nas próximas atualizações vamos expandir para outros mercados.",
+    "lastRun": "Última execução: {{date}}",
     "searchPlaceholder": "Buscar por título...",
     "loading": "Carregando vagas...",
     "empty": "Nenhuma vaga encontrada.",

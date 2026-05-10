@@ -3179,6 +3179,13 @@ select option {
   margin: 0;
 }
 
+.devradar-info-last-run {
+  font-size: 0.72rem;
+  color: var(--text-3, var(--text-2));
+  margin: 0.45rem 0 0;
+  opacity: 0.75;
+}
+
 
 .jobs-list {
   display: flex;

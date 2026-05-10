@@ -48,7 +48,7 @@ async function fetchPage({ search, sort, pg }) {
 }
 
 export default function Jobs() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
@@ -57,7 +57,23 @@ export default function Jobs() {
   const [search, setSearch] = useState('');
   const [sort, setSort] = useState('newest');
   const [expanded, setExpanded] = useState(new Set());
+  const [lastRunAt, setLastRunAt] = useState(null);
   const debounceRef = useRef(null);
+
+  useEffect(() => {
+    fetch(
+      `${import.meta.env.VITE_SUPABASE_URL}/rest/v1/jobs?select=created_at&order=created_at.desc&limit=1`,
+      {
+        headers: {
+          apikey: import.meta.env.VITE_SUPABASE_ANON_KEY,
+          Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+        },
+      }
+    )
+      .then(r => r.json())
+      .then(data => { if (data?.[0]?.created_at) setLastRunAt(data[0].created_at); })
+      .catch(() => {});
+  }, []);
 
   const toggleExpand = (id) => {
     setExpanded(prev => {
@@ -106,6 +122,11 @@ export default function Jobs() {
         <div>
           <span className="devradar-info-label">{t('jobs.botLabel')}</span>
           <p className="devradar-info-desc">{t('jobs.botDesc')}</p>
+          {lastRunAt && (
+            <p className="devradar-info-last-run">
+              {t('jobs.lastRun', { date: new Date(lastRunAt).toLocaleString(i18n.language, { dateStyle: 'short', timeStyle: 'short' }) })}
+            </p>
+          )}
         </div>
       </div>
 

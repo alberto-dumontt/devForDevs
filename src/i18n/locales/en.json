@@ -180,6 +180,7 @@
     "subtitle": "Developer job listings, collected automatically. This feature is in beta — jobs are found by bots and may contain inaccuracies.",
     "botLabel": "What is DevRadar?",
     "botDesc": "DevRadar is a bot that scans the web for developer job openings and posts them here automatically. The routine runs once a day, always bringing the most recent opportunities. No manual curation — just jobs found and delivered automatically. It's under constant development: this first version focuses on the Brazilian market, and upcoming updates will expand coverage to other markets.",
+    "lastRun": "Last run: {{date}}",
     "searchPlaceholder": "Search by title...",
     "loading": "Loading jobs...",
     "empty": "No jobs found.",
