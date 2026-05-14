@@ -5,7 +5,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { requestGenerateSpec } from '../services/api';
 
 export default function GenerateSpec() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { user } = useAuth();
   const location = useLocation();
 
@@ -36,10 +36,12 @@ export default function GenerateSpec() {
     try {
       setLoading(true);
       setSpec('');
+      const language = i18n.language === 'pt-BR' ? 'pt-br' : 'en';
       const response = await requestGenerateSpec({
         technologies,
         professionalLevel: levelMap[level],
         careerObjective: goal,
+        language,
       });
       setSpec(response.spec);
     } catch {
