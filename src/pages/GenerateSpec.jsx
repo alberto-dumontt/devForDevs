@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { requestGenerateSpec } from '../services/api';
+import { supabase } from '../lib/supabase';
 
 export default function GenerateSpec() {
   const { t, i18n } = useTranslation();
@@ -44,6 +45,13 @@ export default function GenerateSpec() {
         language,
       });
       setSpec(response.spec);
+      await supabase.from('devspec_usages').insert({
+        user_id: user.id,
+        technologies,
+        career_level: levelMap[level],
+        career_goal: goal,
+        language,
+      });
     } catch {
       setSpec(t('error'));
     } finally {
