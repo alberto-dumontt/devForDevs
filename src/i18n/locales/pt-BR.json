@@ -193,6 +193,7 @@
     "showLess": "Ver menos",
     "loginToReadMore": "Faça login para ler a descrição completa",
     "loginToApply": "Faça login para acessar esta vaga ↗",
+    "loginToLoadMore": "Faça login para ver mais vagas",
     "workplaceType": {
       "REMOTE": "Remoto",
       "HYBRID": "Híbrido",

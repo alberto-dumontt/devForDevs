@@ -233,9 +233,18 @@ export default function Jobs() {
 
           {hasMore && (
             <div className="jobs-load-more">
-              <button className="btn-load-more" onClick={loadMore} disabled={loadingMore}>
-                {loadingMore ? '...' : t('community.loadMore')}
-              </button>
+              {user ? (
+                <button className="btn-load-more" onClick={loadMore} disabled={loadingMore}>
+                  {loadingMore ? '...' : t('community.loadMore')}
+                </button>
+              ) : (
+                <div className="jobs-load-more-gate">
+                  <p className="jobs-load-more-gate__text">{t('jobs.loginToLoadMore')}</p>
+                  <Link to="/login" className="btn-load-more">
+                    {t('login.loginBtn')}
+                  </Link>
+                </div>
+              )}
             </div>
           )}
         </>

@@ -193,6 +193,7 @@
     "showLess": "Show less",
     "loginToReadMore": "Sign in to read the full description",
     "loginToApply": "Sign in to access this job ↗",
+    "loginToLoadMore": "Sign in to see more job listings",
     "workplaceType": {
       "REMOTE": "Remote",
       "HYBRID": "Hybrid",
